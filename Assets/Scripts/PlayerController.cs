@@ -1,48 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] Rigidbody rbPlayer;
-
     [SerializeField] CharacterController characterController;
 
     [SerializeField] CastSpell castSpell;
 
-    [SerializeField] float speed;
+    [SerializeField] PlayerInput playerInput;
 
-    Vector3 movementInput;
+    [SerializeField] float speed, cooldown;
+
+    [SerializeField] Vector3 positionInitial;
+
+    public Vector3 PositionInitial { get { return positionInitial; } }
+
+    float timer;
+
+    Vector2 vectorInput;
 
 
     void Start()
     {
-        rbPlayer = GetComponent<Rigidbody>();
-
         characterController = GetComponent<CharacterController>();
-
         castSpell = GetComponent<CastSpell>();
-    }
+        playerInput = GetComponent<PlayerInput>();
 
+        positionInitial = gameObject.transform.position;
+
+        timer = 5;
+    }
 
     void Update()
     {
-        movementInput = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        timer += Time.deltaTime;
 
-        //rbPlayer.transform.LookAt(movementInput);
+        vectorInput = playerInput.actions["Move"].ReadValue<Vector2>();
 
-        if (Input.GetKeyDown(KeyCode.Space)) { castSpell.Echolocation(); }
-
+        Vector3 movementInput = new Vector3(vectorInput.x, 0f, vectorInput.y);
+        
         characterController.SimpleMove(movementInput * speed);
+
+        characterController.gameObject.transform.LookAt(characterController.gameObject.transform.position + movementInput);
+
+        if (playerInput.actions["Magic"].WasPressedThisFrame() && timer > cooldown)
+        {
+            castSpell.Echolocation();
+            timer = 0;
+        }
+
     }
-
-    private void FixedUpdate()
-    {
-       //rbPlayer.MovePosition(rbPlayer.position + movementInput.normalized * speed * Time.fixedDeltaTime);
-       
-
-    }
-
-
 
 }

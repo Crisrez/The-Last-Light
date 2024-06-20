@@ -10,7 +10,7 @@ public class CastSpell : MonoBehaviour
 
     public void Echolocation()
     {
-        GameObject.Instantiate(spell, spawnPoint);
+        GameObject.Instantiate(spell, spawnPoint.position, spawnPoint.rotation);
     }
 
 }
