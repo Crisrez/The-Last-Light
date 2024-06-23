@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] AudioSource sFXSource, musicSource;
+    [SerializeField] AudioSource sFXSource, musicSource, slimeSource;
 
     public static AudioManager Instance { get; private set; }
 
@@ -17,7 +17,6 @@ public class AudioManager : MonoBehaviour
         else
         {
             Instance = this;
-            DontDestroyOnLoad(this);
         }
     }
 
@@ -29,6 +28,18 @@ public class AudioManager : MonoBehaviour
     public void PlayMusic(AudioClip audioclip)
     {
         musicSource.PlayOneShot(audioclip);
+    }
+
+    public void Silenciar()
+    {
+        if (!GameManager.Instance.isGamePaused())
+        {
+            slimeSource.Pause();
+        }
+        else
+        {
+            slimeSource.UnPause();
+        }
     }
 
 }
