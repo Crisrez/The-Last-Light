@@ -18,4 +18,9 @@ public class CastSpell : MonoBehaviour
         gameObject.GetComponentInChildren<Animator>().SetBool("Casting", activar);
     }
 
+    public void LoadingMenu()
+    {
+        gameObject.GetComponentInChildren<Animator>().SetTrigger("Menu");
+    }
+
 }

@@ -39,7 +39,6 @@ Transform:
   m_Children:
   - {fileID: 1037817487298690979}
   - {fileID: 189448499570159166}
-  - {fileID: 6750676075900861537}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8036129777581714910
@@ -213,6 +212,7 @@ MonoBehaviour:
   characterController: {fileID: 5127392373266897774}
   playerInput: {fileID: 8306977175846098713}
   gem: {fileID: 8184267088836594916}
+  caminata: {fileID: 0}
   speed: 5
 --- !u!114 &7081093229494363848
 MonoBehaviour:
@@ -256,11 +256,11 @@ Transform:
   m_GameObject: {fileID: 1468749264112395576}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9, y: -0.0717, z: 0}
-  m_LocalScale: {x: 0.1, y: 1.8, z: 0.1}
+  m_LocalPosition: {x: 0, y: -3.2389998, z: 0}
+  m_LocalScale: {x: 0.33333334, y: 6, z: 0.33333334}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8579799320575098821}
+  m_Father: {fileID: 189448499570159166}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6770937323096468988
 MeshFilter:
@@ -471,7 +471,8 @@ Transform:
   m_LocalPosition: {x: 0.9, y: 0.9, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6750676075900861537}
   m_Father: {fileID: 8579799320575098821}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5406376294008195760

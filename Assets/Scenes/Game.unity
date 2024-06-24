@@ -3666,6 +3666,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 8007038708915963562}
+    - target: {fileID: 5907869739295595073, guid: 2ff23e71a981125409ff6276571a5849, type: 3}
+      propertyPath: m_Speed
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6145590615478563488, guid: 2ff23e71a981125409ff6276571a5849, type: 3}
       propertyPath: M_Defeat
       value: 
