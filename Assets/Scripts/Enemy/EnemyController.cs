@@ -13,6 +13,15 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         enemy.destination = player.transform.position;
+
+        if (GameManager.Instance.GetTimer() < 2)
+        {
+            enemy.speed = 2.5f;
+        }
+        else
+        {
+            enemy.speed = 1.5f;
+        }
     }
 
 }

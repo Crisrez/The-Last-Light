@@ -12,7 +12,7 @@ public class Defeat : MonoBehaviour
             //Destroy(collision.gameObject);
             Debug.Log("Enemigo");
             GameManager.Instance.ActivarMenu(M_Defeat);
-            collision.gameObject.transform.position = new Vector3(0,5,0);
+            //collision.gameObject.transform.position = new Vector3(0,5,0);
         }
     }
 
@@ -23,7 +23,7 @@ public class Defeat : MonoBehaviour
             //Destroy(collision.gameObject);
             Debug.Log("Defeat...");
             GameManager.Instance.ActivarMenu(M_Defeat);
-            collider.gameObject.transform.position = new Vector3(0, 5, 0);
+            //collider.gameObject.transform.position = new Vector3(0, 5, 0);
         }
     }
 }

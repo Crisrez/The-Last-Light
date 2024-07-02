@@ -32,7 +32,7 @@ public class AudioManager : MonoBehaviour
 
     public void Silenciar()
     {
-        if (!GameManager.Instance.isGamePaused())
+        if (GameManager.Instance.isGamePaused())
         {
             slimeSource.Pause();
         }

@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject M_Pause;
 
-    private bool isPause = false;
+    private bool isPaused = false;
     private float timer = 5;
 
     public static GameManager Instance { get; private set; }
@@ -36,59 +36,29 @@ public class GameManager : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (Time.timeScale > 0)
+        /*if (Time.timeScale > 0)
         {
-            isPause = false;
+            isPaused = false;
         }
         else
         {
-            isPause = true;
-        }
+            isPaused = true;
+        }*/
 
         if (timer > cooldown)
         {
             spell.LoadingAnimation(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && (!isPaused || M_Pause.activeInHierarchy))
         {
             ActivarMenu(M_Pause);
         }
     }
 
-
-    public void CastLight()
-    {
-        if (timer > cooldown)
-        {
-            timer = 0;
-            AudioManager.Instance.PlaySound(sfxCast);
-            spell.Echolocation();
-            spell.LoadingAnimation(true);
-        }
-    }
-
-    public void ChangeTime(int valorTiempo)
-    {
-        Time.timeScale = valorTiempo;
-    }
-
-    public void ActivarPause()
-    {
-        if (!isPause)
-        {
-           ChangeTime(0);
-        }
-        else
-        {
-            ChangeTime(1);
-        }
-        
-    }
-
     public void ActivarMenu(GameObject menu)
     {
-        if (!isPause)
+        if (!isPaused)
         {
             menu.SetActive(true);
             ActivarPause();
@@ -103,9 +73,47 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void ActivarPause()
+    {
+        if (!isPaused)
+        {
+           ChangeTime(0);
+            isPaused = true;
+        }
+        else
+        {
+           ChangeTime(1);
+            isPaused = false;
+        }
+        
+    }
+
+    public void ChangeTime(int valorTiempo)
+    {
+        Time.timeScale = valorTiempo;
+    }
+
+
+    public void CastLight()
+    {
+        if (timer > cooldown)
+        {
+            timer = 0;
+            AudioManager.Instance.PlaySound(sfxCast);
+            spell.Echolocation();
+            spell.LoadingAnimation(true);
+        }
+    }
+
+
     public bool isGamePaused()
     {
-        return isPause;
+        return isPaused;
+    }
+
+    public float GetTimer()
+    {
+        return timer;
     }
 
 }

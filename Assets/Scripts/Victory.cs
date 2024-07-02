@@ -12,7 +12,7 @@ public class Victory : MonoBehaviour
         {
             Debug.Log("VICTORY!!!");
             GameManager.Instance.ActivarMenu(M_Victory);
-            collider.gameObject.transform.position = new Vector3(0, 5, 0);
+            //collider.gameObject.transform.position = new Vector3(0, 5, 0);
         }
     }
 }
