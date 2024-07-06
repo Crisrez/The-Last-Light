@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] AudioClip sfxCast;
+    //[SerializeField] AudioClip sfxCast;
     [SerializeField] CastSpell spell;
     [SerializeField] float cooldown;
 
@@ -62,13 +62,13 @@ public class GameManager : MonoBehaviour
         {
             menu.SetActive(true);
             ActivarPause();
-            AudioManager.Instance.Silenciar();
+            //AudioManager.Instance.Silenciar();
         }
         else
         {
             menu.SetActive(false);
             ActivarPause();
-            AudioManager.Instance.Silenciar();
+            //AudioManager.Instance.Silenciar();
         }
 
     }
@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
         if (timer > cooldown)
         {
             timer = 0;
-            AudioManager.Instance.PlaySound(sfxCast);
+            //AudioManager.Instance.PlaySound(sfxCast);
             spell.Echolocation();
             spell.LoadingAnimation(true);
         }
