@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Maguita/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638558352200022936
+  lastModified: 638558365492530953
   FileSizes:
   - Name: Desktop
     Value: 2497152
@@ -181,7 +181,7 @@ MonoBehaviour:
   - {fileID: -6677986595659419188}
   StringsBanks:
   - {fileID: 6938859320894457304}
-  cacheTime: 638558352200032994
+  cacheTime: 638558365492546020
   cacheVersion: 131618
 --- !u!114 &2073863380514618354
 MonoBehaviour:
@@ -274,7 +274,7 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Maguita/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638558352200032994
+  lastModified: 638558365492546020
   FileSizes:
   - Name: Desktop
     Value: 1114
