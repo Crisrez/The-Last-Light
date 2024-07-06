@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: -1574801519
     Data4: -1247203463
   Banks:
-  - {fileID: -6677986595659419188}
+  - {fileID: 6383468880159905687}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -27,26 +27,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1846
---- !u!114 &-6677986595659419188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD Studio/Maguita/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638558365492530953
-  FileSizes:
-  - Name: Desktop
-    Value: 2497152
-  Exists: 1
 --- !u!114 &-5437715975358598941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,7 +46,7 @@ MonoBehaviour:
     Data3: 201251740
     Data4: -1313596563
   Banks:
-  - {fileID: -6677986595659419188}
+  - {fileID: 6383468880159905687}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -94,7 +74,7 @@ MonoBehaviour:
     Data3: 949198734
     Data4: 604734228
   Banks:
-  - {fileID: -6677986595659419188}
+  - {fileID: 6383468880159905687}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -146,7 +126,7 @@ MonoBehaviour:
     Data3: 370739128
     Data4: 2001174886
   Banks:
-  - {fileID: -6677986595659419188}
+  - {fileID: 6383468880159905687}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -167,8 +147,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 6938859320894457304}
-  - {fileID: -6677986595659419188}
+  - {fileID: 7909972893100825692}
+  - {fileID: 6383468880159905687}
   EditorEvents:
   - {fileID: -2001289012244545237}
   - {fileID: -3926035286377771786}
@@ -178,10 +158,10 @@ MonoBehaviour:
   EditorParameters:
   - {fileID: 2455461065843563196}
   MasterBanks:
-  - {fileID: -6677986595659419188}
+  - {fileID: 6383468880159905687}
   StringsBanks:
-  - {fileID: 6938859320894457304}
-  cacheTime: 638558365492546020
+  - {fileID: 7909972893100825692}
+  cacheTime: 638558598505308278
   cacheVersion: 131618
 --- !u!114 &2073863380514618354
 MonoBehaviour:
@@ -250,7 +230,7 @@ MonoBehaviour:
     Data3: -1061350262
     Data4: -2026009837
   Banks:
-  - {fileID: -6677986595659419188}
+  - {fileID: 6383468880159905687}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -259,7 +239,25 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12683
---- !u!114 &6938859320894457304
+--- !u!114 &6383468880159905687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: BuildAudio/The-Last-Light_Data/StreamingAssets/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638558598505308278
+  FileSizes: []
+  Exists: 1
+--- !u!114 &7909972893100825692
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -271,12 +269,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: ../../FMOD Studio/Maguita/Build/Desktop/Master.strings.bank
+  Path: BuildAudio/The-Last-Light_Data/StreamingAssets/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638558365492546020
+  lastModified: 638558598505308278
   FileSizes:
-  - Name: Desktop
+  - Name: 
     Value: 1114
   Exists: 1
 --- !u!114 &8179509036946718562

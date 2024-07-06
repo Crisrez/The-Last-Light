@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] CharacterController characterController;
     [SerializeField] PlayerInput playerInput;
     [SerializeField] GameObject gem;
-    [SerializeField] AudioSource caminata;
+    //[SerializeField] AudioSource caminata;
 
     [SerializeField] float speed;
 
@@ -26,11 +26,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.Instance.isGamePaused())
+        /*if (GameManager.Instance.isGamePaused())
         {
             caminata.Pause();
             return;
-        }
+        }*/
 
         vectorInput = playerInput.actions["Move"].ReadValue<Vector2>();
 
@@ -38,14 +38,14 @@ public class PlayerController : MonoBehaviour
         
         characterController.SimpleMove(movementInput * speed);
 
-        if (vectorInput.magnitude == 0)
+        /*if (vectorInput.magnitude == 0)
         {
             caminata.mute = true;
         }
         else
         {
             caminata.mute = false;
-        }
+        }*/
 
         characterController.gameObject.transform.LookAt(characterController.gameObject.transform.position + movementInput);
 

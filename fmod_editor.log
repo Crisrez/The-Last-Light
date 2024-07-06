@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000025BF254A628 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000002557DEBF4C8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,173 +18,6 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 2481312
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 15840
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000085518FEEA8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAB26E4130
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAB26E40F0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAB26E4210
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAB26E42D0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025B2172D6B8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='StingerVictory', format=5, channels=2, frequency=48000, lengthbytes=68416, lengthpcm=231137, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707945.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 2481312
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 15840
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000085518FEEA8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAB26E4130
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAB26E40F0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAB26E4210
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAB26E42D0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025B2172D6B8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='StingerDefeat', format=5, channels=2, frequency=48000, lengthbytes=48640, lengthpcm=186831, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707945.
-[LOG] SystemI::createSound                     : filename = ../../FMOD Studio/Maguita/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000025B21A730B8, queue head = 0000025962533558, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025B21A730B8
-[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD Studio/Maguita/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2481312
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15840
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000259644985C0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MenuLoop_Normal_130bpm', format=5, channels=2, frequency=48000, lengthbytes=327584, lengthpcm=1417845, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707945.
-[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025B21A730B8
-[LOG] SystemI::createSound                     : filename = ../../FMOD Studio/Maguita/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000025B20FB9008, queue head = 0000025962533558, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025B20FB9008
-[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD Studio/Maguita/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2481312
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15840
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000025BC8A1E330
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     filename = ../../FMOD Studio/Maguita/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 0000025B20FB8E58, queue head = 0000025962533558, queue count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SlimeLoop', format=5, channels=2, frequency=48000, lengthbytes=141568, lengthpcm=509537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707945.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025B20FB9008
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025B20FB8E58
-[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD Studio/Maguita/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2481312
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15840
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000025BC8A1E470
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GameplaySoloMonsterLoop_130bpm', format=5, channels=2, frequency=48000, lengthbytes=742752, lengthpcm=4253539, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707945.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025B20FB8E58
-[LOG] SystemI::createSound                     : filename = ../../FMOD Studio/Maguita/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000025BC8A92CF8, queue head = 0000025962533558, queue count = 0
-[LOG] SystemI::createSound                     : filename = ../../FMOD Studio/Maguita/Build/Desktop/Master.bank : mode 02010082
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025BC8A92CF8
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD Studio/Maguita/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 0000025BC8A927E8, queue head = 0000025962533558, queue count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2481312
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15840
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000025BC8A1E5B0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GameplayAmbienceLoop_130bpm', format=5, channels=2, frequency=48000, lengthbytes=1099840, lengthpcm=4253539, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707945.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025BC8A92CF8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025BC8A927E8
-[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD Studio/Maguita/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2481312
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15840
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000025BC8A1E0B0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GameplaySoloMonsterLoop_130bpm', format=5, channels=2, frequency=48000, lengthbytes=742752, lengthpcm=4253539, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707945.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025BC8A927E8
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000025BC893E658, queue head = 0000025962533558, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025BC893E658
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025BC893E658
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 2481312
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 15840
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000085518FEEA8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAB26E4130
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAB26E40F0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAB26E4210
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAB26E42D0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025B2172D8C8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='StepsLoop_130bpm', format=5, channels=2, frequency=48000, lengthbytes=24992, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707945.
-[LOG] SoundI::release                          : SlimeLoop (0000025B20FB9008)
-[LOG] SoundI::release                          :     SlimeLoop (000002596418E468)
-[LOG] SoundI::release                          :     SlimeLoop (0000025BC893E9B8)
-[LOG] SoundI::release                          : GameplaySoloMonsterLoop_130bpm (0000025BC8A927E8)
-[LOG] SoundI::release                          :     GameplaySoloMonsterLoop_130bpm (00000259641909C8)
-[LOG] SoundI::release                          :     GameplaySoloMonsterLoop_130bpm (0000025BC893E808)
-[LOG] SoundI::release                          : GameplayAmbienceLoop_130bpm (0000025BC8A92CF8)
-[LOG] SoundI::release                          :     GameplayAmbienceLoop_130bpm (000002596418F7E8)
-[LOG] SoundI::release                          :     GameplayAmbienceLoop_130bpm (0000025BC893E658)
-[LOG] SoundI::release                          : MenuLoop_Normal_130bpm (0000025B21A730B8)
-[LOG] SoundI::release                          :     MenuLoop_Normal_130bpm (000002596418E948)
-[LOG] SoundI::release                          :     MenuLoop_Normal_130bpm (0000025BF2FB22C8)
-[LOG] SystemI::createSound                     : filename = ../../FMOD Studio/Maguita/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000025BF7BFDC68, queue head = 0000025962533558, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025BF7BFDC68
-[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD Studio/Maguita/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2481312
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15840
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000259644985C0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MenuLoop_Normal_130bpm', format=5, channels=2, frequency=48000, lengthbytes=327584, lengthpcm=1417845, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707945.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025BF7BFDC68
-[LOG] SoundI::release                          : GameplaySoloMonsterLoop_130bpm (0000025B20FB8E58)
-[LOG] SoundI::release                          :     GameplaySoloMonsterLoop_130bpm (000002596418FB28)
-[LOG] SoundI::release                          :     GameplaySoloMonsterLoop_130bpm (0000025BC893E4A8)
-[LOG] SoundI::release                          : MenuLoop_Normal_130bpm (0000025BF7BFDC68)
-[LOG] SoundI::release                          :     MenuLoop_Normal_130bpm (000002596418F7E8)
-[LOG] SoundI::release                          :     MenuLoop_Normal_130bpm (0000025B20FB9368)
-[LOG] SoundI::release                          :  (0000025BC8AF71A8)
-[LOG] SoundI::release                          :     StepsLoop_130bpm (000002596418F4A8)
-[LOG] SoundI::release                          :  (0000025BC8AF3F58)
-[LOG] SoundI::release                          :     StingerDefeat (0000025965FE7F28)
-[LOG] SoundI::release                          :  (0000025BC8AF6BE8)
-[LOG] SoundI::release                          :     StingerVictory (0000025965FE9448)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -195,4 +28,10 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
-[ERR] assert                                   : assertion: 'gSystemInitCount == 0' failed
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
