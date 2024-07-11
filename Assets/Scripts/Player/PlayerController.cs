@@ -5,13 +5,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] CharacterController characterController;
-    [SerializeField] PlayerInput playerInput;
-    [SerializeField] GameObject gem;
-    //[SerializeField] AudioSource caminata;
+    [SerializeField] private CharacterController characterController;
+    [SerializeField] private PlayerInput playerInput;
+    [SerializeField] private GameObject gem;
+    [SerializeField] private float speed;
 
-    [SerializeField] float speed;
-
+    private bool iswalking = false;
     private Vector2 vectorInput;
 
     void Start()
@@ -26,11 +25,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        /*if (GameManager.Instance.isGamePaused())
+        if (GameManager.Instance.isGamePaused())
         {
-            caminata.Pause();
+            AudioManager.Instance.PauseSteps();
             return;
-        }*/
+        }
 
         vectorInput = playerInput.actions["Move"].ReadValue<Vector2>();
 
@@ -38,14 +37,19 @@ public class PlayerController : MonoBehaviour
         
         characterController.SimpleMove(movementInput * speed);
 
-        /*if (vectorInput.magnitude == 0)
+        if (vectorInput.magnitude != 0)
         {
-            caminata.mute = true;
+            if (!iswalking)
+            {
+                iswalking = true;
+                AudioManager.Instance.PlaySteps();
+            }
         }
         else
         {
-            caminata.mute = false;
-        }*/
+            iswalking = false;
+            AudioManager.Instance.PauseSteps();
+        }
 
         characterController.gameObject.transform.LookAt(characterController.gameObject.transform.position + movementInput);
 
@@ -55,14 +59,5 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
-    /*private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            Debug.Log("Enemigo");
-            characterController.transform.position = new Vector3(0, 5, 0);
-        }
-    }*/
 
 }

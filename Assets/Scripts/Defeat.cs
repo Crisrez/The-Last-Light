@@ -9,10 +9,8 @@ public class Defeat : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //Destroy(collision.gameObject);
             Debug.Log("Enemigo");
             GameManager.Instance.ActivarMenu(M_Defeat);
-            //collision.gameObject.transform.position = new Vector3(0,5,0);
         }
     }
 
@@ -20,10 +18,8 @@ public class Defeat : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Player"))
         {
-            //Destroy(collision.gameObject);
             Debug.Log("Defeat...");
             GameManager.Instance.ActivarMenu(M_Defeat);
-            //collider.gameObject.transform.position = new Vector3(0, 5, 0);
         }
     }
 }

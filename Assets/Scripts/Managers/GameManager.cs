@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
         if (timer > cooldown)
         {
             timer = 0;
-            //AudioManager.Instance.PlaySound(sfxCast);
+            AudioManager.Instance.PlayMagic();
             spell.Echolocation();
             spell.LoadingAnimation(true);
         }
